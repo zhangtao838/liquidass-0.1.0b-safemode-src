@@ -23,6 +23,9 @@
 // backboardd can write here outside its temporary path
 #define LG_LOG_PATH "/var/mobile/Library/Accessibility/liquidglass.log"
 
+// forward declaration (defined later in this file)
+static void lglog(const char *fmt, ...) __attribute__((format(printf, 1, 2)));
+
 // ── SafeMode: backboardd crash-loop protection ──
 #define LG_GUARD_PATH  "/var/mobile/Library/Accessibility/liquidass-backboardd-guard.bin"
 #define LG_SAFEMODE_LOG "/var/mobile/Library/Accessibility/liquidass-safemode.log"
