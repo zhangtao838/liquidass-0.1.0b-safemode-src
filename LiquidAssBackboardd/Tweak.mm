@@ -58,7 +58,6 @@ static BOOL lgSafeModeCheck(void) {
     g.version = 1;
 
     CFAbsoluteTime now = CFAbsoluteTimeGetCurrent();
-    BOOL needWrite = YES;
 
     int fd = open(LG_GUARD_PATH, O_RDONLY);
     if (fd >= 0) {
